@@ -1,0 +1,222 @@
+<!DOCTYPE HTML>
+<!--
+	Editorial by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+{% load static %}
+<html>
+
+<head>
+    <title>Makers|Create your value</title>
+    <link rel="icon" href="http://i.imgur.com/tbozz4A.png" type="image/gif" />
+    <meta charset="utf-8" />
+    <link rel="shortcut icon" type="image/x-icon" href="http://imgur.com/tbozz4A" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+    <!--[if lte IE 8]><script src="assets/js/ie/html5shiv.js"></script><![endif]-->
+    <link rel="stylesheet" href="{% static 'css/main.css' %}" />
+    <!--[if lte IE 9]><link rel="stylesheet" href="assets/css/ie9.css" /><![endif]-->
+    <!--[if lte IE 8]><link rel="stylesheet" href="assets/css/ie8.css" /><![endif]-->
+    <!-- <a href="http://imgur.com/tbozz4A"><img src="http://i.imgur.com/tbozz4A.png" title="source: imgur.com" /></a>-->
+</head>
+
+<body>
+
+    <!-- Wrapper -->
+    <div id="wrapper">
+
+        <!-- Main -->
+        <div id="main">
+            <div class="inner">
+
+                <!-- Header -->
+                <header id="header">
+                    <class="logo"><strong>創客-</strong>創造專屬你的客製物品
+
+                </header>
+
+                <!-- Banner -->
+                <section id="banner">
+                    <div class="content">
+                        <header>
+                            <h1>甚麼是創客?<br /> 你，就是一位</h1>
+                            <p>自造者（Maker，又譯為「創客」）概念來源於英文Maker和Hacker兩詞的綜合釋義，它是指一群酷愛科技、熱衷實踐的人群，他們以分享技術、交流思想為樂，以自造者為主體的社區（Makerspace）則成了自造者文化的載體。</p>
+                        </header>
+                        <p>自造者是一群酷愛科技、熱衷實踐的人群，他們以分享技術、交流思想為樂，以自造者為主體的社區則成了自造者文化的載體。 自造者空間（maker space）就是結合不同自自造者的外部能量，激發每個人的創造力。
+                        </p>
+                        <ul class="actions">
+                            <li><a href="{% url 'first' %}" class="button big">有興趣</a></li>
+                        </ul>
+                    </div>
+                    <span class="image object">
+							<img src="{% static 'images/pic11.jpg' %}" alt="" />
+					</span>
+                </section>
+
+                <!-- Section -->
+                <section>
+                    <header class="major">
+                        <h2>創客計畫</h2>
+                    </header>
+                    <div class="features">
+                        <article>
+                            <span class="icon fa-diamond"></span>
+                            <div class="content">
+                                <h3>獎金計畫</h3>
+                                <p>利用比賽，創造更多創客：在生活中，總是有許多大大小小的麻煩事困擾著我們，但是我們之所以為萬物之靈，便是造物者賦予我們創造力、想像力，讓我們能用雙手開創這個世界，發明許多實用並兼具美感的東西解決生活上一切問題，請以如何提升生活的便利性，設計屬於你的創意。</p>
+                            </div>
+                        </article>
+                        <article>
+                            <span class="icon fa-paper-plane"></span>
+                            <div class="content">
+                                <h3>行動計畫</h3>
+                                <p>行政院推出為期三個月的vMaker行動計畫-「Maker．空總．擂台」，即日起在TAF創新基地熱烈展開！行政院長出席活動記者會時表示，自造者運動(maker movement)蔚為國際風潮，希望藉由「動手做」精神，結合現代高科技，讓學生從中體驗，進而發揮創新與創意，讓創意帶動進步與改變，目前行政院也擴大讓「自造者運動」更深入年輕人社群及校園中。</p>
+                            </div>
+                        </article>
+                        <article>
+                            <span class="icon fa-rocket"></span>
+                            <div class="content">
+                                <h3>開源計畫</h3>
+                                <p>創客圈會願意主動分享及公開自己的成果資訊，讓一般人能夠獲得相關資訊，享受動手做的味道</p>
+                            </div>
+                        </article>
+                        <article>
+                            <span class="icon fa-signal"></span>
+                            <div class="content">
+                                <h3>資助計畫</h3>
+                                <p>若你喜歡創客，可以選擇贊助他們或者是主動掏錢購買它們的產品，有你的支持，創客為你帶來更好的生活。</p>
+                            </div>
+                        </article>
+                    </div>
+                </section>
+
+                <!-- Section -->
+                <section>
+                    <header class="major">
+                        <h2>活動資訊</h2>
+                    </header>
+                    <div class="posts">
+                        <article>
+                            <a class="image"><img src="{% static 'images/pic01.png' %}" alt="" /></a>
+                            <h3>樂富創客教育團隊</h3>
+                            <p>「模仿是最快的學習技術」，透過開放源碼與翻轉教育，站在開源的肩膀上，我們專注程式 x 積木的「趣」樂營 (Learn)。希望用「自造」找回學習的樂趣，用「積木」找出學習的捷徑。</p>
+                            <ul class="actions">
+                                <li><a href="{% url 'second' %}" class="button">更多資訊</a></li>
+                            </ul>
+                        </article>
+                        <article>
+                            <a class="image"><img src="{% static 'images/pic02.jpg' %}" alt="" /></a>
+                            <h3>台灣無人飛機應用設計學院 / Taiwan Drone Design and Application Development College</h3>
+                            <p>國內最專業針對無人機的相關知識傳遞及教學單位。課程內容從最基礎的飛行安全訓練，中階飛控系統軟硬體整合，競速無人機FPV訓練教學，至高階無人機電腦視覺及自動化系統設計。</p>
+                            <ul class="actions">
+                                <li><a href="{% url 'third' %}" class="button">更多資訊</a></li>
+                            </ul>
+                        </article>
+                        <article>
+                            <a href="#" class="image"><img src="{% static 'images/pic03.jpg' %}" alt="" /></a>
+                            <h3>【課程】Arduino 四軸飛行器實作坊，無人機硬體、無線遙控器、飛控軟體整合、飛行教學，一天學會</h3>
+                            <p>【6月3日班】四軸飛行器實作要學什麼？除了自己做 Arduino 無人機，本課程還同時學會自己做 Arduino 無線遙控器，當然還有飛行控制軟體。想要學技術、做空拍、收集環境資訊、協助救災、觀察危險地帶、競速…各種無人機的應用，都可以從這場實作課開始，利用開源硬體、開源軟體的力量，實現願望。</p>
+                            <ul class="actions">
+                                <li><a href="{% url 'forth' %}" class="button">更多資訊</a></li>
+                            </ul>
+                        </article>
+                        <article>
+                            <a href="#" class="image"><img src="{% static 'images/pic04.png' %}" alt="" /></a>
+                            <h3>Webduino【 Web + Arduino 】</h3>
+                            <p>我們是一個高雄的熱血創意團隊，成員有韌體工程師、網頁前後端工程師以及視覺設計師，憑著一股對網頁技術無止盡的愛，在 2015 年，實現了真正用 Web 串接 Arduino 的完整過程，純粹撰寫 HTML 與 Javascript 的網頁語法，就能夠玩轉各式各樣的傳感器，為廣大的開發者和網頁設計師，創造了前所未有的開發模式，我們深信在不久的將來，網頁技術將引領開發者的潮流，帶來各式各樣的創意與契機！ </p>
+                            <p>我們每個月都會舉辦活動，與各大開發者社團也都有相關交流，在平均下來一個月至少舉辦三場活動 ( 教師研習、社團、展覽...等 )，於 2015 年更參與了台灣知名的大型活動 ( JSDC、WebConf、MOPCON、MakerFaire...等 )，我們相信參與這些大型的活動，可以從許多前輩、先進與同好身上，獲得許多寶貴的改善建議，同時也能將自己的技術貢獻給廣大的開發者們。</p>
+                            <ul class="actions">
+                                <li><a href="{% url 'fifth' %}" class="button">更多資訊</a></li>
+                            </ul>
+                        </article>
+
+                    </div>
+                </section>
+
+            </div>
+        </div>
+
+        <!-- Sidebar -->
+        <div id="sidebar">
+            <div class="inner">
+                <!-- Menu -->
+                <nav id="menu">
+                    <header class="major">
+                        <h2>常用選單</h2>
+                    </header>
+                    <ul>
+                        <li><a href="http://127.0.0.1:8000">登入首頁</a></li>
+                        <li>
+                            <span class="opener">團隊資訊</span>
+                            <ul>
+                                <li><a href="{% url 'second' %}">樂富創客教育團對</a></li>
+                                <li><a href="{% url 'third' %}">台灣無人飛機應用設計學院 / Taiwan Drone Design and Application Development College</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <span class="opener">熱門活動</span>
+                            <ul>
+                                <li><a href="{% url 'forth' %}">【課程】Arduino 四軸飛行器實作坊，無人機硬體、無線遙控器、飛控軟體整合、飛行教學，一天學會</a></li>
+                            </ul>
+                        </li>
+
+                    </ul>
+                </nav>
+
+                <!-- Section -->
+                <section>
+                    <header class="major">
+                        <h2>網站相關資訊</h2>
+                    </header>
+                    <div class="mini-posts">
+                        <article>
+                            <a href="{% url 'second' %}" class="image"><img src="{% static 'images/pic01.png' %}" alt="" /></a>
+                            <p>樂富創客教育團隊</p>
+                        </article>
+                        <article>
+                            <a href="{% url 'third' %}" class="image"><img src="{% static 'images/pic02.jpg' %}" alt="" /></a>
+                            <p>台灣無人飛機應用設計學院 / Taiwan Drone Design and Application Development College</p>
+                        </article>
+                        <article>
+                            <a href="{% url 'forth' %}" class="image"><img src="{% static 'images/pic03.jpg' %}" alt="" /></a>
+                            <p>【課程】Arduino 四軸飛行器實作坊，無人機硬體、無線遙控器、飛控軟體整合、飛行教學，一天學會</p>
+                        </article>
+                    </div>
+                    <ul class="actions">
+                        <li><a href="{% url 'information' %}" class="button">更多資訊</a></li>
+                    </ul>
+                </section>
+
+                <!-- Section -->
+                <section>
+                    <header class="major">
+                        <h2>網站負責人─台科網頁設計第6組</h2>
+                    </header>
+                    <p>想要張貼相關創客資訊，歡迎跟我們說</p>
+                    <ul class="contact">
+                        <li class="fa-envelope-o">onlycloudy112042@gmail.com</a>
+                        </li>
+                        <li class="fa-home">台灣科技大學</li>
+                    </ul>
+                </section>
+
+                <!-- Footer -->
+                <footer id="footer">
+                    <p class="copyright">&copy; Untitled. All rights reserved. Demo Images: <a href="https://unsplash.com">Unsplash</a>. Design: <a href="https://html5up.net">HTML5 UP</a>.</p>
+                </footer>
+
+            </div>
+        </div>
+
+    </div>
+
+    <!-- Scripts -->
+    <script src="{% static 'js/jquery.min.js' %}"></script>
+    <script src="{% static 'js/skel.min.js' %}"></script>
+    <script src="{% static 'js/util.js' %}"></script>
+    <!--[if lte IE 8]><script src="assets/js/ie/respond.min.js"></script><![endif]-->
+    <script src="{% static 'js/main.js' %}"></script>
+
+</body>
+
+</html>

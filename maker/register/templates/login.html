@@ -1,0 +1,26 @@
+<!-- login.html (ch10www project) -->
+{% extends "base.html" %} {% block title %}登入觀看資訊{% endblock %} {% block content %}
+<div class='container'>
+    {% for message in messages %}
+    <div class='alert alert-{{message.tags}}'>{{ message }}</div>
+    {% endfor %}
+    <div class='row'>
+        <div class='col-md-12'>
+            <div class='panel panel-default'>
+                <div class='panel-heading' align=center>
+                    <h3>登入查看資訊</h3>
+                </div>
+            </div>
+            <form action='.' method='POST'>
+                {% csrf_token %}
+                <table>
+                    {{ login_form.as_table }}
+                </table>
+                <label for="username">用戶名稱:</label>
+                <input type="text" name="username" value="" id="username"> <br />
+                <label for="password">用戶密碼:</label>
+                <input type="password" name="password" value="" id="password"> <br />
+                <input type='submit' value='登入'><br/>
+            </form>
+        </div>
+        {% endblock %}

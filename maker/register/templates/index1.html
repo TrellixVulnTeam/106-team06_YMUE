@@ -1,0 +1,52 @@
+<!-- index.html (ch10www project) -->
+{% extends "base.html" %} {% block title %}創客活動平台{% endblock %} {% block content %} {% load staticfiles %}
+<div class='container'>
+    {% for message in messages %}
+    <div class='alert alert-{{message.tags}}'>{{ message }}</div>
+    {% endfor %}
+    <div class='row'>
+        <div class='col-md-12'>
+            <div class='panel panel-default'>
+                <div class='panel-heading' align=center>
+                    <h3>歡迎{{ username | default:"來到創客網"}}</h3>
+                </div>
+            </div>
+        </div>
+    </div>
+    {% for diary in diaries %} {% cycle "
+    <div class='row'>" "" "" %}
+        <div class='col-md-4'>
+            <div class='panel panel-primary'>
+                <div class='panel-heading' align=center>
+                    {{ diary.ddate }}
+                </div>
+                <div class='panel-body'>
+                    {{ diary.note | linebreaks }}
+                </div>
+
+            </div>
+        </div>
+        {% cycle "" "" "</div>" %} {% empty %}
+    <h2><em>即日期，創辦會員，即可查看最新活動消息</em></h2>
+    <hr>
+    <h3>感謝贊助區</h3>
+    <article>
+        <h3><a href='https://www.facebook.com/%E6%A8%82%E5%AF%8C%E5%89%B5%E5%AE%A2%E6%95%99%E8%82%B2%E5%9C%98%E9%9A%8A-x-%E5%9F%8E%E9%84%89%E5%A4%A7%E5%AD%B8-887595771296590/?fref=ts'>樂富創客教育團隊</a></h3>
+        <p>「模仿是最快的學習技術」，透過開放源碼與翻轉教育，站在開源的肩膀上，我們專注程式 x 積木的「趣」樂營 (Learn)。希望用「自造」找回學習的樂趣，用「積木」找出學習的捷徑。</p>
+        <a class="image"><img src="{% static 'images/pic01.png' %}" alt="" /></a>
+    </article>
+    <article>
+        <h3><a href='https://www.facebook.com/idronemakers/?fref=ts'>台灣無人飛機應用設計學院 / Taiwan Drone Design and Application Development College</a></h3>
+        <p>國內最專業針對無人機的相關知識傳遞及教學單位。課程內容從最基礎的飛行安全訓練，中階飛控系統軟硬體整合，競速無人機FPV訓練教學，至高階無人機電腦視覺及自動化系統設計。</p>
+        <a class="image"><img src="{% static 'images/pic02.jpg' %}" alt="" /></a>
+    </article>
+    <article>
+        <h3> <a href='https://webduino.io'>Webduino【 Web + Arduino 】</a></h3>
+        <p>我們是一個高雄的熱血創意團隊，成員有韌體工程師、網頁前後端工程師以及視覺設計師，憑著一股對網頁技術無止盡的愛，在 2015 年，實現了真正用 Web 串接 Arduino 的完整過程，純粹撰寫 HTML 與 Javascript 的網頁語法，就能夠玩轉各式各樣的傳感器，為廣大的開發者和網頁設計師，創造了前所未有的開發模式，我們深信在不久的將來，網頁技術將引領開發者的潮流，帶來各式各樣的創意與契機！ </p>
+        <a href="#" class="image"><img src="{% static 'images/pic04.png' %}" alt="" /></a>
+    </article>
+
+
+    {% endfor %}
+</div>
+{% endblock %}
